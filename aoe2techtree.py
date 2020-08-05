@@ -40,6 +40,10 @@ def return_all_units():
                 [
                     'cavalry archer',
                     'heavy cavalry archer'
+                ],
+            'hand cannon':
+                [
+                    'hand cannon'    
                 ]
             },
         'stable':
