@@ -2315,7 +2315,7 @@ def civ_attributes():
 
                 }, 
 
-        'persians': #NOTE DONE WITh this YET
+        'persians': 
                 {
                     
                     #range
@@ -3199,6 +3199,29 @@ def civ_attributes():
         
             }
     return attributes
+
+def civ_bonuses():
+
+    #not sure how best to organize this, since some civs have multiple
+    #bonuses and techs (e.g. Britons have the strong early bonus of faster
+    #shepards, and the decent middle game bonus of discounted wood TCs
+    bonuses = {
+        'aztecs': {
+            'economy' : ['early', 'late', 'collection', 'strong', 
+                        'all resources'],
+            'military': ['monks', 'general', 'moderate']
+            }, 
+        'berbers': {
+            'economy'  : ['discount', 'weak'], 
+            'military' : ['discount', 'cavalry', 'strong']
+            },
+        'britons' : {
+            'economy' : ['early', 'strong']
+            }
+     }
+    return bonuses
+
+
 
 def make_civ_dict(unitlist, civ_info):
     civ_unitlist = {}

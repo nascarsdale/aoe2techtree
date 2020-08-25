@@ -11,11 +11,21 @@ for civ in all_attributes.keys():
 desired = []
 asking_for_units = True
 
+#make list of things for faulty queries
+alltechs = []
+for build in all_units.keys():
+    for unitline in all_units[build].keys():
+        for unit in all_units[build][unitline]:
+            alltechs.append(unit)
+
 while asking_for_units == True:
     unit = input('What do you want your civ to have? Type \'no\' if you would not like anything else. ')
     if unit == 'no':
         asking_for_units = False
         break
+    if unit not in alltechs:
+        print('that unit or tech does not appear on our list! please check the readme for input details')
+        continue
     desired.append(unit)
 
 civs_meeting_reqs = []
