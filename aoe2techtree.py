@@ -3205,20 +3205,37 @@ def civ_bonuses():
     #not sure how best to organize this, since some civs have multiple
     #bonuses and techs (e.g. Britons have the strong early bonus of faster
     #shepards, and the decent middle game bonus of discounted wood TCs
+    #maybe nested lists would be good, so that the bonuses could be read
+    #sequentially? 
+    #I think I could nest the bonuses individually, e.g. ['strong' 'early'
+    #'late' 'eco'] for aztecs eco, then ask for an input like "strong early
+    #eco". I would then break up the input string and check that all elements 
+    #were in the civ's bonuses
     bonuses = {
-        'aztecs': {
-            'economy' : ['early', 'late', 'collection', 'strong', 
-                        'all resources'],
-            'military': ['monks', 'general', 'moderate']
-            }, 
-        'berbers': {
-            'economy'  : ['discount', 'weak'], 
-            'military' : ['discount', 'cavalry', 'strong']
-            },
-        'britons' : {
-            'economy' : ['early', 'strong']
-            }
-     }
+        'aztecs': [['economy', 'early', 'mid', 'late', 'strong', 'food', 'wood'], #higher carry capacity
+                    ['military', 'creation rate', 'infantry', 'archer', 'medium'], #10% faster creation for military
+                    ['monk', 'strong'], #+5hp / monastery tech
+                    ['economy', 'gold', 'medium']], #+33% relic bonus
+        
+        'berbers': [['military', 'discount', 'cavalry', 'strong']], #stable discount
+        
+        'britons': [['economy', 'early', 'strong'], #shepard collection increase
+                    ['military', 'archer', 'medium'], #archer range bonus
+                    ['economy', 'mid', 'late', 'weak']], #TC discount
+        
+        'burmese': [['economy', 'mid', 'strong', 'wood'], #free wood upgrades
+                    ['military', 'infantry', 'strong'], #+1 inf atk
+                    ['monk', 'discount', 'strong']], #50% cheaper monk techs
+     
+        'byzantines' : [['defensive'], #building hp
+                        ['military', 'discount', 'trash units', 'strong'], #cheap trash
+                        ['economy', 'late', 'medium']], #cheaper imp
+
+        'celts' : [['economy', 'early', 'mid', 'late', 'strong', 'wood'],
+                    ['military', 'infantry', 'weak'], 
+                    []]
+
+        }
     return bonuses
 
 
