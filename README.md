@@ -9,14 +9,13 @@ a time. Once you are done, type "no" and the civs that meet your
 requirements will be printed. 
 
 A few important notes:
-Something important to know is that not all the techs have the same
-name as they do in the tech tree. For example, "bracer" keeps the same
-name, but the other blacksmith upgrades have been changed to "melee 
-attack N" (where N is 1,2, or 3), "cavalry armor N", "archer armor N", 
-and "infantry armor N". 
+Not all the techs have the same name as they do in the tech tree. For 
+example, "bracer" keeps the same name, but the other blacksmith upgrades 
+have been changed to "melee attack N" (where N is 1,2, or 3), 
+"cavalry armor N", "archer armor N", and "infantry armor N". 
 
 Everything is lowercase. I have generally tried to keep the same name 
-as the tech tree for non-blacksmith techs and units(e.g., "skirmisher" 
+as the tech tree for non-blacksmith techs and units (e.g., "skirmisher" 
 instead of "skirm"). 
 
 If there is confusion, run "print-all-units.py" which will print the 
