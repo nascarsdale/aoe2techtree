@@ -3219,7 +3219,7 @@ def civ_bonuses():
         
         'berbers': [['military', 'discount', 'cavalry', 'strong']], #stable discount
         
-        'britons': [['economy', 'early', 'strong'], #shepard collection increase
+        'britons': [['economy', 'early', 'strong', 'food'], #shepard collection increase
                     ['military', 'archer', 'medium'], #archer range bonus
                     ['economy', 'mid', 'late', 'weak']], #TC discount
         
@@ -3231,10 +3231,104 @@ def civ_bonuses():
                         ['military', 'discount', 'trash units', 'strong'], #cheap trash
                         ['economy', 'late', 'medium']], #cheaper imp
 
-        'celts' : [['economy', 'early', 'mid', 'late', 'strong', 'wood'],
-                    ['military', 'infantry', 'weak'], 
-                    []]
+        'celts' : [['economy', 'early', 'mid', 'late', 'strong', 'wood'], #wood bonus
+                    ['military', 'infantry', 'weak'],                   #faster inf
+                    ['military', 'siege', 'strong']],               #faster firing siege
 
+        'chinese' : [['economy', 'early', 'strong'],        #additional vils
+                    ['economy', 'mid', 'late', 'strong']],  #cheaper techs
+
+        'ethiopians' : [['military', 'archer', 'medium'],   #faster firing archers
+                        ['economy', 'medium', 'mid']],      #freee money
+        
+        'franks' : [['military', 'cavalry', 'strong'], #cav HP
+                    ['economy', 'mid', 'medium'], #free farm
+                    ['economy', 'early', 'strong', 'food']],
+        
+        'goths' : [['military', 'strong', 'discount', 'infantry'], #cheap inf
+                   ['economy', 'early', 'weak', 'food']], #hunters better
+        
+        'huns' : [['economy', 'early', 'mid', 'strong', 'wood'], #no houses
+                    ['military', 'discount', 'medium', 'cavalry archer']], #disc CA
+        
+        'incas' : [['economy', 'early', 'food', 'weak'], #free llama
+                   ['economy', 'early', 'wood', 'medium'], #houses support 10
+                   ['economy', 'mid', 'stone', 'weak']], #stone
+        
+        'indians' : [['economy', 'early', 'mid', 'late', 'strong'], #cheap vils
+                     ['military', 'weak', 'camels']], #+1p camel armor
+        
+        'italians' : [['economy', 'early', 'mid', 'strong'], #cheap advance
+                      ['navy', 'strong', 'late'], #dock techs
+                      ['military', 'gunpowder', 'discount', 'late', 'medium']],
+        
+        'japanese' : [['economy', 'early', 'wood', 'strong'], #cheaper camps
+                      ['fishing', 'strong'], #fishing ships better
+                      ['military', 'infantry', 'strong']], #infantry attack
+        
+        #NOTE: Khmer farmers NOT buffed until DE so their bonuses are trash here
+        'khmer' : [['economy', 'medium', 'wood', 'early'], #don't need buildings
+                   ['military', 'elephant', 'weak']], #faster elefantos
+        
+        'koreans' : [['economy', 'weak', 'early'], #villager LOS
+                     ['economy', 'weak', 'stone'], #stone gather
+                     ['defensive', 'tower', 'medium']], #various tower bonuses
+        
+        'magyars' : [['military', 'medium', 'infantry', 'cavalry'], #free atk
+                     ['military', 'cavalry', 'medium', 'discount', 'early'], #cheaper scouts
+                     ['economy', 'weak', 'early']], #1hitko wolves
+        
+        'malay' : [['economy', 'strong', 'early', 'mid'], #faster up
+                   ['fishing', 'strong'], #fish traps
+                   ['military', 'elephant', 'discount', 'medium']], #cheap elefantos
+        
+        'malians' : [['economy', 'early', 'mid', 'late', 'wood', 'strong'], #building
+                     ['military', 'mid', 'late', 'infantry', 'medium'], #champskarls
+                     ['economy', 'mid', 'medium', 'gold']], #free gold mining
+        
+        'mayans' : [['economy', 'early', 'mid', 'late', 'strong'], #more res
+                    ['economy', 'early', 'strong'], #+1 vil at start
+                    ['military', 'archer', 'discount', 'strong']], #cheap archers
+        
+        'mongols' : [['economy', 'early', 'strong', 'food'], #hunters
+                     ['military', 'cavalry', 'weak'], #hussar HP
+                     ['military', 'cavalry archer', 'weak']], 
+                       #so weird quantifying bc their CA don't have ring armor
+                        #so they're not useful... but in a vacuum the 
+                        #bonus is ok?
+        
+        'persians' : [['economy', 'early', 'medium'], #free res
+                        ['economy', 'early', 'mid', 'late', 'strong']], #faster TC/dock
+        
+        'portuguese' : [['military', 'discount', 'gold', 'strong'], #less gold
+                        ['navy', 'medium']], #ships +10HP
+                        #not even gonna mention feitoria lmao
+                        
+         'saracens' : [['military', 'archer', 'weak'], #archer building atk
+                       ['economy', 'mid', 'late', 'medium'], #market stuff
+                       ['navy', 'strong']], #ship atk
+                        
+        'slavs' : [['economy', 'mid', 'late', 'strong', 'food'], #farming
+                   ['military', 'discount', 'mid', 'late', 'siege', 'medium']], #siege discount
+        
+        'spanish' : [['economy', 'discount', 'strong', 'late', 'gold'], #blacksmith; this also encapsulates their strong team bonus ig
+                     ['military', 'gunpowder', 'strong', 'late']], #CG and faster firing
+        
+        'teutons' : [['economy', 'wood', 'strong', 'mid', 'late'], #farms
+                     ['defensive', 'tower', 'medium']], #various tower bonuses
+        
+        'turks' : [['economy', 'early', 'mid', 'late', 'strong', 'gold'], #gold
+                      ['military', 'gunpowder', 'strong', 'discount'], #gunpowder bonus pile
+                   ['military', 'cavalry', 'medium']], #free hussar/lc
+        
+        'vietnamese' : [['military', 'early', 'medium'], #positions
+                        ['economy', 'mid', 'late', 'wood', 'medium'],#no-wood techs
+                        ['military', 'archer', 'weak']], #higher archer HP
+        
+        'vikings' : [['navy', 'discount', 'strong', 'early', 'late', 'mid'], 
+                     ['military', 'medium', 'infantry'], 
+                     ['economy', 'strong', 'mid']]
+                       
         }
     return bonuses
 

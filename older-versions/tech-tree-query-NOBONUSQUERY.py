@@ -1,8 +1,8 @@
+??? from here until ???END lines may have been inserted/deleted
 from aoe2techtree import *
 
 all_units = return_all_units()
 all_attributes = civ_attributes()
-bonuses = civ_bonuses()
 
 full_dict = {}
 
@@ -39,15 +39,14 @@ while run:
             break
 
         #tell them if they input a unit that my list doesn't have
-        if unit not in alltechs and 'bonus' not in unit:
+        if unit not in alltechs:
             print('that unit or tech does not appear on our list! please check the readme for input details')
             continue
         desired.append(request)
 
+#===============START THE QUERY NOW THAT THE LIST IS IN HAND=================================
 
-#==================BEGIN ACTUALLY QUERYING=======================
-
-
+    #initialize list
     civs_meeting_reqs = []
 
     i = 0
@@ -59,62 +58,36 @@ while run:
 
     for thing in desired:
         temp = []
-    
+        
+        
+
         #add ability to say "not paladin", for example
+        #if they add a tech that has "not" in it this will break tho lol 
         if 'not' in thing:
             target = 0
             thing = thing[4:]
         elif 'not' not in thing:
             target = 1
-        
-        
+
+        #first run; need to initialize a list of civs that meet at least 1 requirement
         if i == 0:
-            if 'bonus' not in thing:
-                for civ in full_dict.keys():
-                    if full_dict[civ][thing] == target:
-                        temp.append(civ)
-                    else:
-                        continue
-            elif 'bonus' in thing:
-                bonustraits = thing.split(' ')
-                bonustraits.remove('bonus')
-                for civ in full_dict.keys():
-                    for civbonus in bonuses[civ]:
-                        if all(trait in civbonus for trait in bonustraits):
-                            temp.append(civ)
-            
-            #hacky way to make i the dictionary key,  
+            for civ in full_dict.keys():
+                if full_dict[civ][thing] == target:
+                    temp.append(civ)
+                else:
+                    continue
+            #hacky way to make dict keys w/ i
             master_runs[str(i)] = temp
         
-        #subsequent runs, where you want to pull from the shorter list you've already made
+        #subsequent runs; pull from civs that already meet one of them
         elif i>0:
             newcivlist = master_runs[str(i-1)]
-            if 'bonus' not in thing:
-                    for civ in newcivlist:
-                        if full_dict[civ][thing] == target:
-                            temp.append(civ)
-                        else:
-                            continue
-            elif 'bonus' in thing:
-                bonustraits = thing.split(' ')
-                bonustraits.remove('bonus')
-                for civ in newcivlist:
-                    for civbonus in bonuses[civ]:
-                        if all(trait in civbonus for trait in bonustraits):                                
-                            temp.append(civ)
-            
-            #don't accidentally indent this lol 
+            for civ in newcivlist:
+                if full_dict[civ][thing] == target:
+                    temp.append(civ)
+                else:
+                    continue
             master_runs[str(i)] = temp
-        
-        #pre-bonus code
-        #elif i>0:
-        #    newcivlist = master_runs[str(i-1)]
-        #    for civ in newcivlist:
-        #        if full_dict[civ][thing] == target:
-        #            temp.append(civ)
-        #        else:
-        #            continue
-        #    master_runs[str(i)] = temp
     
         if i < len(desired)-1:
             i += 1
@@ -136,10 +109,6 @@ while run:
 
     civs_meeting_reqs = master_runs[str(i)]
     
-    #quick hack because my bonus code introduces duplicates 
-    civlist_final = []
-    [civlist_final.append(x) for x in civs_meeting_reqs if x not in civlist_final]
-
     print('The civs that meet your constraints are: ', civs_meeting_reqs)
 
     again = input('Would you like to run another search? Type y or n')
@@ -149,4 +118,4 @@ while run:
     elif again=='n':
         run = False
         break
-
+???END
