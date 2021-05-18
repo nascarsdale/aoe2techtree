@@ -127,6 +127,7 @@ def return_all_units():
                     [
                         'arson',
                         'squires',
+                        'supplies',
                         'thumb ring',
                         'parthian tactics',
                         'bloodlines',
@@ -222,7 +223,8 @@ def civ_attributes():
 
                     #TECHS
                     'arson'             :1, 
-                    'squires'           :1, 
+                    'squires'           :1,
+                    'supplies'          :1,
                     'thumb ring'        :0,
                     'parthian tactics'  :0,
                     'bloodlines'        :0,
@@ -313,6 +315,7 @@ def civ_attributes():
 
                     'arson'             :1,
                     'squires'           :1,
+                    'supplies'          :1,
                     'thumb ring'        :1,
                     'parthian tactics'  :0,
                     'bloodlines'        :1,
@@ -403,6 +406,7 @@ def civ_attributes():
 
                     'arson'             :1,
                     'squires'           :1,
+                    'supplies'          :1,
                     'thumb ring'        :0,
                     'parthian tactics'  :0,
                     'bloodlines'        :0,
@@ -492,6 +496,7 @@ def civ_attributes():
 
                     'arson'             :1,
                     'squires'           :1,
+                    'supplies'          :1,
                     'thumb ring'        :0,
                     'parthian tactics'  :1,
                     'bloodlines'        :1,
@@ -568,6 +573,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 'full',
@@ -666,6 +672,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :0, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 'full',
@@ -764,6 +771,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :0,
 
                     #stable
                    'light cavalry': 2,
@@ -863,6 +871,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 'full',
@@ -960,6 +969,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 2,
@@ -1059,6 +1069,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, #they effectively have arson
                     'squires'           :1, 
+                    'supplies'          :0,
 
                     #stable
                    'light cavalry': 'full',
@@ -1156,6 +1167,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :0,
 
                     #stable
                    'light cavalry': 'full',
@@ -1254,6 +1266,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 0,
@@ -1353,6 +1366,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 'full',
@@ -1451,6 +1465,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 'full',
@@ -1549,6 +1564,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 2,
@@ -1647,6 +1663,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :0, 
+                    'supplies'          :0,
 
                     #stable
                    'light cavalry': 'full',
@@ -1746,6 +1763,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 'full',
@@ -1844,6 +1862,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :0, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 'full',
@@ -1942,6 +1961,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 2,
@@ -2040,6 +2060,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 2,
@@ -2138,6 +2159,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :0,
 
                     #stable
                    'light cavalry': 0,
@@ -2236,6 +2258,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :0,
 
                     #stable
                    'light cavalry': 'full',
@@ -2334,6 +2357,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 'full',
@@ -2432,6 +2456,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :0, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 2,
@@ -2530,6 +2555,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 'full',
@@ -2628,6 +2654,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 'full',
@@ -2726,6 +2753,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 'full',
@@ -2824,6 +2852,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 1,
@@ -2922,6 +2951,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 'full',
@@ -3020,6 +3050,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 2,
@@ -3118,6 +3149,7 @@ def civ_attributes():
                     #techs
                     'arson'             :1, 
                     'squires'           :1, 
+                    'supplies'          :1,
 
                     #stable
                    'light cavalry': 2,
@@ -3211,20 +3243,32 @@ def civ_bonuses():
     #'late' 'eco'] for aztecs eco, then ask for an input like "strong early
     #eco". I would then break up the input string and check that all elements 
     #were in the civ's bonuses
+
+    # NOTE!!!! 
+    #right now techs and team bonuses are applied inconsistently throughout the tree, 
+    #need to go in and fix that
+
     bonuses = {
         'aztecs': [['economy', 'early', 'mid', 'late', 'strong', 'food', 'wood'], #higher carry capacity
-                    ['military', 'creation rate', 'infantry', 'archer', 'medium'], #10% faster creation for military
+                    ['military', 'creation rate', 'medium'], #10% faster creation for military
                     ['monk', 'strong'], #+5hp / monastery tech
-                    ['economy', 'gold', 'medium']], #+33% relic bonus
+                    ['team', 'gold', 'medium'], #relics
+                    ['skirmisher', 'tech', 'castle'], #atlatl
+                    ['infantry', 'tech', 'imperial']], #garland wars
         
         'berbers': [['military', 'discount', 'cavalry', 'strong']], #stable discount
         
         'britons': [['economy', 'early', 'strong', 'food'], #shepard collection increase
                     ['military', 'archer', 'medium'], #archer range bonus
-                    ['economy', 'mid', 'late', 'weak']], #TC discount
+                    ['economy', 'mid', 'late', 'weak'], #cheaper TCs
+                    ['archer', 'tech', 'castle'], #yeoman
+                    ['siege', 'trebuchet', 'tech', 'imperial'], #warwolf
+                    ['team', 'archer', 'medium']], #faster ranges
         
-        'burmese': [['economy', 'mid', 'strong', 'wood'], #free wood upgrades
+        'burmese': [['economy', 'mid', 'medium', 'wood'], #free wood upgrades
                     ['military', 'infantry', 'strong'], #+1 inf atk
+                    ['elephant', 'castle', 'tech'], #howdah
+                    ['cavalry', 'imperial', 'tech'], #manipur cav
                     ['monk', 'discount', 'strong']], #50% cheaper monk techs
      
         'byzantines' : [['defensive'], #building hp
@@ -3239,16 +3283,17 @@ def civ_bonuses():
                     ['economy', 'mid', 'late', 'strong']],  #cheaper techs
 
         'ethiopians' : [['military', 'archer', 'medium'],   #faster firing archers
-                        ['economy', 'medium', 'mid']],      #freee money
+                        ['economy', 'medium', 'mid'], #freeee money
+                        ['siege', 'tech']], #torsion engines      
         
         'franks' : [['military', 'cavalry', 'strong'], #cav HP
                     ['economy', 'mid', 'medium'], #free farm
-                    ['economy', 'early', 'strong', 'food']],
+                    ['economy', 'early', 'strong', 'food']],#berries
         
         'goths' : [['military', 'strong', 'discount', 'infantry'], #cheap inf
                    ['economy', 'early', 'weak', 'food']], #hunters better
         
-        'huns' : [['economy', 'early', 'mid', 'strong', 'wood'], #no houses
+        'huns' : [['economy', 'early', 'mid', 'medium', 'wood'], #no houses
                     ['military', 'discount', 'medium', 'cavalry archer']], #disc CA
         
         'incas' : [['economy', 'early', 'food', 'weak'], #free llama
@@ -3258,27 +3303,31 @@ def civ_bonuses():
         'indians' : [['economy', 'early', 'mid', 'late', 'strong'], #cheap vils
                      ['military', 'weak', 'camels']], #+1p camel armor
         
-        'italians' : [['economy', 'early', 'mid', 'strong'], #cheap advance
+        'italians' : [['economy', 'early', 'mid', 'medium'], #cheap advance
                       ['navy', 'strong', 'late'], #dock techs
                       ['military', 'gunpowder', 'discount', 'late', 'medium']],
         
-        'japanese' : [['economy', 'early', 'wood', 'strong'], #cheaper camps
+        'japanese' : [['economy', 'early', 'wood', 'medium'], #cheaper camps
                       ['fishing', 'strong'], #fishing ships better
+                      ['siege', 'trebuchet', 'tech', 'imperial'],
                       ['military', 'infantry', 'strong']], #infantry attack
         
         #NOTE: Khmer farmers NOT buffed until DE so their bonuses are trash here
         'khmer' : [['economy', 'medium', 'wood', 'early'], #don't need buildings
-                   ['military', 'elephant', 'weak']], #faster elefantos
+                   ['military', 'elephant', 'weak'], #faster elefantos
+                   ['military', 'siege', 'weak', 'team']], #scorpion range
         
         'koreans' : [['economy', 'weak', 'early'], #villager LOS
                      ['economy', 'weak', 'stone'], #stone gather
+                     ['siege', 'onager', 'team', 'weak'], #less minumum onager range
+                     ['siege', 'onager', 'tech', 'imperial'], #shinchokon
                      ['defensive', 'tower', 'medium']], #various tower bonuses
         
         'magyars' : [['military', 'medium', 'infantry', 'cavalry'], #free atk
                      ['military', 'cavalry', 'medium', 'discount', 'early'], #cheaper scouts
                      ['economy', 'weak', 'early']], #1hitko wolves
         
-        'malay' : [['economy', 'strong', 'early', 'mid'], #faster up
+        'malay' : [['economy', 'medium', 'early', 'mid'], #faster up
                    ['fishing', 'strong'], #fish traps
                    ['military', 'elephant', 'discount', 'medium']], #cheap elefantos
         
@@ -3291,8 +3340,10 @@ def civ_bonuses():
                     ['military', 'archer', 'discount', 'strong']], #cheap archers
         
         'mongols' : [['economy', 'early', 'strong', 'food'], #hunters
-                     ['military', 'cavalry', 'weak'], #hussar HP
-                     ['military', 'cavalry archer', 'weak']], 
+                     ['military', 'cavalry', 'medium'], #hussar HP
+                     ['military', 'cavalry archer', 'weak'], #faster firing CA
+                     ['siege', 'tech', 'imperial'], #drill
+                     ['team', 'early', 'strong']], #team scout LOS 
                        #so weird quantifying bc their CA don't have ring armor
                         #so they're not useful... but in a vacuum the 
                         #bonus is ok?
@@ -3300,7 +3351,7 @@ def civ_bonuses():
         'persians' : [['economy', 'early', 'medium'], #free res
                         ['economy', 'early', 'mid', 'late', 'strong']], #faster TC/dock
         
-        'portuguese' : [['military', 'discount', 'gold', 'strong'], #less gold
+        'portuguese' : [['military', 'discount', 'gold', 'medium'], #less gold
                         ['navy', 'medium']], #ships +10HP
                         #not even gonna mention feitoria lmao
                         
@@ -3311,18 +3362,21 @@ def civ_bonuses():
         'slavs' : [['economy', 'mid', 'late', 'strong', 'food'], #farming
                    ['military', 'discount', 'mid', 'late', 'siege', 'medium']], #siege discount
         
-        'spanish' : [['economy', 'discount', 'strong', 'late', 'gold'], #blacksmith; this also encapsulates their strong team bonus ig
+        'spanish' : [['team', 'discount', 'strong', 'late', 'gold'], #blacksmith; this also encapsulates their strong team bonus ig
                      ['military', 'gunpowder', 'strong', 'late']], #CG and faster firing
         
         'teutons' : [['economy', 'wood', 'strong', 'mid', 'late'], #farms
                      ['defensive', 'tower', 'medium']], #various tower bonuses
         
-        'turks' : [['economy', 'early', 'mid', 'late', 'strong', 'gold'], #gold
+        'turks' : [['economy', 'early', 'mid', 'late', 'medium', 'gold'], #gold
                       ['military', 'gunpowder', 'strong', 'discount'], #gunpowder bonus pile
+                      ['cavalry archer', 'castle', 'tech'],
+                      ['siege', 'tower', 'imperial', 'tech'], #artillery
                    ['military', 'cavalry', 'medium']], #free hussar/lc
         
         'vietnamese' : [['military', 'early', 'medium'], #positions
                         ['economy', 'mid', 'late', 'wood', 'medium'],#no-wood techs
+                        #note they have NOT received their eco bonus in HD :(
                         ['military', 'archer', 'weak']], #higher archer HP
         
         'vikings' : [['navy', 'discount', 'strong', 'early', 'late', 'mid'], 

@@ -29,6 +29,7 @@ while run:
     while asking_for_units == True:
         request = input('What unit/tech do you want your civ to have? Type \'no\' if you would not like anything else. ')
         #enable "not" functionality without breaking the "make sure they're asking for something in the list"
+        #note that this only works because there aren't any units with "not" in their name, lol
         if 'not' in request:
             unit = request[4:]
         else:
@@ -67,7 +68,7 @@ while run:
         elif 'not' not in thing:
             target = 1
         
-        
+        #run number 1, when you're drawing from the full list of civs
         if i == 0:
             if 'bonus' not in thing:
                 for civ in full_dict.keys():
@@ -80,8 +81,18 @@ while run:
                 bonustraits.remove('bonus')
                 for civ in full_dict.keys():
                     for civbonus in bonuses[civ]:
+
+                        #if all of the traits of your desired bonus are in the civ's bonus...
                         if all(trait in civbonus for trait in bonustraits):
-                            temp.append(civ)
+                            
+                            #making it so if you search "siege bonus", and ethiopians come up, 
+                            #you know they have some siege-related advantage, but that it's a 
+                            #tech, not a true free bonus.
+                            
+                            if 'tech' in civbonus:
+                                temp.append(civ+'*')
+                            else:
+                                temp.append(civ)
             
             #hacky way to make i the dictionary key,  
             master_runs[str(i)] = temp
@@ -99,10 +110,16 @@ while run:
                 bonustraits = thing.split(' ')
                 bonustraits.remove('bonus')
                 for civ in newcivlist:
+                    #get rid of starred civs (i.e. unique tech bonuses)
+                    if '*' in civ:
+                        civ = civ[:-1]
                     for civbonus in bonuses[civ]:
-                        if all(trait in civbonus for trait in bonustraits):                                
-                            temp.append(civ)
-            
+                        if all(trait in civbonus for trait in bonustraits):
+                            if 'tech' in civbonus:
+                                temp.append(civ+'*')
+                            else:
+                                temp.append(civ)
+
             #don't accidentally indent this lol 
             master_runs[str(i)] = temp
         
@@ -140,7 +157,7 @@ while run:
     civlist_final = []
     [civlist_final.append(x) for x in civs_meeting_reqs if x not in civlist_final]
 
-    print('The civs that meet your constraints are: ', civs_meeting_reqs)
+    print('The civs that meet your constraints are: ', civlist_final)
 
     again = input('Would you like to run another search? Type y or n')
 
