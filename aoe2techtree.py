@@ -462,6 +462,97 @@ def civ_attributes():
                     'crop rotation'     :0,
                     'techslist': None
                 },
+        
+        'bulgarians':
+                {
+                    #barracks
+                    'swords' : 4,
+                    'spears' : 'full',
+                    'eagles' : 0,
+
+                    #range
+                    'archers': 1,
+                    'skirmisher' : 'full',
+                    'cavalry archer' : 'full',
+                    'hand cannon': 0,
+
+                    #stable
+                   'light cavalry': 'full',
+                    'knight' : 2,
+                    'camel' : 0,
+                    'battle elephant' : 0,
+
+                    #workshop
+                   'ram' : 'full',
+                   'mangonel' : 'full',
+                   'scorpion' : 'full',
+                   'bombard cannon' : 0,
+
+                    #dock
+                    'galley' : 'full',
+                    'fire ship' : 2,
+                    'demo ship' : 2,
+                    'cannon galleon' : 1,
+
+                    'arson'             :1,
+                    'squires'           :1,
+                    'supplies'          :1,
+                    'thumb ring'        :1,
+                    'parthian tactics'  :1,
+                    'bloodlines'        :1,
+                    'husbandry'         :1,
+                    'archer armor 1'    :1,
+                    'archer armor 2'    :1,
+                    'archer armor 3'    :0,
+                    'fletching'         :1,
+                    'bodkin arrow'      :1,
+                    'bracer'            :1,
+                    'melee attack 1'    :1,
+                    'melee attack 2'    :1,
+                    'melee attack 3'    :1,
+                    'cavalry armor 1'   :1,
+                    'cavalry armor 2'   :1,
+                    'cavalry armor 3'   :1,
+                    'infantry armor 1'  :1,
+                    'infantry armor 2'  :1,
+                    'infantry armor 3'  :1,
+                'full blacksmith'       :0,
+                    #dock
+                    'careening'         :1,
+                    'dry dock'          :0,
+                    'shipwright'        :0,
+                    #univesity
+                    'masonry'           :1,
+                    'architecture'      :1,
+                    'stone wall'        :1,
+                    'fortified wall'    :0,
+                    'guard tower'       :1,
+                    'keep'              :1,
+                    'bombard tower'     :0,
+                    'siege engineers'   :1,
+                    'heated shot'       :1,
+                    'treadmill crane'   :0,
+                    'arrowslits'        :0,
+                    #monastery
+                    'redemption'        :1,
+                    'atonement'         :0,
+                    'herbal medicine'   :1,
+                    'heresy'            :1,
+                    'sanctity'          :0,
+                    'fervor'            :1,
+                    'faith'             :0,
+                    'illumination'      :1,
+                    'block printing'    :0,
+                    'theocracy'         :1,
+                    #eco techs
+                    'gold 2'            :1,
+                    'stone 2'           :1,
+                    'two man saw'       :0,
+                    'guilds'            :0,
+                    'crop rotation'     :1,
+                    #troubleshooting
+                    'techslist': None
+                }, 
 
             'burmese':
                 {
@@ -852,6 +943,105 @@ def civ_attributes():
 
                 }, 
         
+        'cumans':
+                {
+                    
+                    #range
+                    'archers': 2,
+                    'skirmisher' : 'full',
+                    'cavalry archer' : 'full',
+                    'hand cannon' : 0,
+                    #techs
+                    'thumb ring'        :1,
+                    'parthian tactics'  :1,
+                    
+                    #barracks
+                    'swords' : 'full',
+                    'spears' : 'full',
+                    'eagles' : 0,
+                    #techs
+                    'arson'             :1, 
+                    'squires'           :1, 
+                    'supplies'          :0,
+
+                    #stable
+                   'light cavalry': 'full',
+                    'knight' : 'full',
+                    'camel' : 1,
+                    'battle elephant' : 0,
+                    #techs
+                    'bloodlines'        :1,
+                    'husbandry'         :0,
+                
+                    #workshop
+                   'ram' : 'full',
+                   'mangonel' : 'full',
+                   'scorpion' : 1,
+                   'bombard cannon' : 0,
+                    
+                    
+                    #blacksmith
+                    'archer armor 1'    :1,
+                    'archer armor 2'    :1,
+                    'archer armor 3'    :1,
+                    'fletching'         :1,
+                    'bodkin arrow'      :1,
+                    'bracer'            :0,
+                    'melee attack 1'    :1,
+                    'melee attack 2'    :1,
+                    'melee attack 3'    :1,
+                    'cavalry armor 1'   :1,
+                    'cavalry armor 2'   :1,
+                    'cavalry armor 3'   :1,
+                    'infantry armor 1'  :1,
+                    'infantry armor 2'  :1,
+                    'infantry armor 3'  :1,
+                'full blacksmith'       :0,
+
+                    #dock
+                    'galley' : 'full',
+                    'fire ship' : 'full',
+                    'demo ship' : 2,
+                    'cannon galleon' : 0,
+                    #techs
+                    'careening'         :1,
+                    'dry dock'          :0,
+                    'shipwright'        :0,
+
+                    #university
+                    'masonry'           :1,
+                    'architecture'      :0,
+                    'stone wall'        :0,
+                    'fortified wall'    :0,
+                    'guard tower'       :0,
+                    'keep'              :0,
+                    'bombard tower'     :0,
+                    'siege engineers'   :0,     
+                    'heated shot'       :1,
+                    'treadmill crane'   :0,
+                    'arrowslits'        :0,
+                    
+                    #monastery
+                    'redemption'        :0,
+                    'atonement'         :1,
+                    'herbal medicine'   :1,
+                    'heresy'            :1,
+                    'sanctity'          :1,
+                    'fervor'            :1,
+                    'faith'             :1,
+                    'illumination'      :0,
+                    'block printing'    :0,
+                    'theocracy'         :0,
+                    #eco techs
+                    'gold 2'            :1,
+                    'stone 2'           :0,
+                    'two man saw'       :1,
+                    'guilds'            :1,
+                    'crop rotation'     :1,
+                    'techslist': None
+
+                }, 
+        
         'ethiopians':
                 {
                     
@@ -977,9 +1167,7 @@ def civ_attributes():
                     'camel' : 0,
                     'battle elephant' : 0,
                     #techs
-                    'bloodlines'        :1, #technically not true but their bonus
-                                            #approximates this and I haven't been
-                                               #including civ bonuses
+                    'bloodlines'        :0, 
                     'husbandry'         :1,
                 
                     #workshop
@@ -1707,8 +1895,7 @@ def civ_attributes():
                     #techs
                     'careening'         :1,
                     'dry dock'          :1,
-                    'shipwright'        :1, #not true in latest DE but in HD I 
-                                            #think it is
+                    'shipwright'        :0,
 
                     #university
                     'masonry'           :1,
@@ -1839,6 +2026,105 @@ def civ_attributes():
                     'two man saw'       :1,
                     'guilds'            :1,
                     'crop rotation'     :0,
+                    'techslist': None
+
+                }, 
+        
+        'lithuanians':
+                {
+                    
+                    #range
+                    'archers': 2,
+                    'skirmisher' : 'full',
+                    'cavalry archer' : 'full',
+                    'hand cannon' : 1,
+                    #techs
+                    'thumb ring'        :1,
+                    'parthian tactics'  :0,
+                    
+                    #barracks
+                    'swords' : 'full',
+                    'spears' : 'full',
+                    'eagles' : 0,
+                    #techs
+                    'arson'             :1, 
+                    'squires'           :0, 
+                    'supplies'          :1,
+
+                    #stable
+                   'light cavalry': 'full',
+                    'knight' : 'full',
+                    'camel' : 0,
+                    'battle elephant' : 0,
+                    #techs
+                    'bloodlines'        :1, 
+                    'husbandry'         :1,
+                
+                    #workshop
+                   'ram' : 2,
+                   'mangonel' : 2,
+                   'scorpion' : 1,
+                   'bombard cannon' : 1,
+                    
+                    
+                    #blacksmith
+                    'archer armor 1'    :1,
+                    'archer armor 2'    :1,
+                    'archer armor 3'    :1,
+                    'fletching'         :1,
+                    'bodkin arrow'      :1,
+                    'bracer'            :1,
+                    'melee attack 1'    :1,
+                    'melee attack 2'    :1,
+                    'melee attack 3'    :1,
+                    'cavalry armor 1'   :1,
+                    'cavalry armor 2'   :1,
+                    'cavalry armor 3'   :1,
+                    'infantry armor 1'  :1,
+                    'infantry armor 2'  :1,
+                    'infantry armor 3'  :0,
+                'full blacksmith'       :0,
+
+                    #dock
+                    'galley' : 'full',
+                    'fire ship' : 'full',
+                    'demo ship' : 2,
+                    'cannon galleon' : 1,
+                    #techs
+                    'careening'         :1,
+                    'dry dock'          :1,
+                    'shipwright'        :0,
+
+                    #university
+                    'masonry'           :1,
+                    'architecture'      :1,
+                    'stone wall'        :1,
+                    'fortified wall'    :1,
+                    'guard tower'       :1,
+                    'keep'              :1,
+                    'bombard tower'     :1,
+                    'siege engineers'   :0,     
+                    'heated shot'       :1,
+                    'treadmill crane'   :1,
+                    'arrowslits'        :0,
+                    
+                    #monastery
+                    'redemption'        :1,
+                    'atonement'         :1,
+                    'herbal medicine'   :1,
+                    'heresy'            :1,
+                    'sanctity'          :1,
+                    'fervor'            :1,
+                    'faith'             :1,
+                    'illumination'      :1,
+                    'block printing'    :1,
+                    'theocracy'         :1,
+                    #eco techs
+                    'gold 2'            :0,
+                    'stone 2'           :1,
+                    'two man saw'       :1,
+                    'guilds'            :1,
+                    'crop rotation'     :1,
                     'techslist': None
 
                 }, 
@@ -2369,10 +2655,10 @@ def civ_attributes():
                     'husbandry'         :1,
                 
                     #workshop
-                   'ram' : 'full',
-                   'mangonel' : 2,
-                   'scorpion' : 'full',
-                   'bombard cannon' : 1,
+                    'ram' : 'full',
+                    'mangonel' : 2,
+                    'scorpion' : 'full',
+                    'bombard cannon' : 1,
                     
                     
                     #blacksmith
@@ -2833,6 +3119,105 @@ def civ_attributes():
 
                 }, 
         
+        'tatars':
+                {
+                    
+                    #range
+                    'archers': 2,
+                    'skirmisher' : 'full',
+                    'cavalry archer' : 'full',
+                    'hand cannon' : 1,
+                    #techs
+                    'thumb ring'        :1,
+                    'parthian tactics'  :1,
+                    
+                    #barracks
+                    'swords' : 4,
+                    'spears' : 'full',
+                    'eagles' : 0,
+                    #techs
+                    'arson'             :1, 
+                    'squires'           :1, 
+                    'supplies'          :0,
+
+                    #stable
+                   'light cavalry': 'full',
+                    'knight' : 2,
+                    'camel' : 'full',
+                    'battle elephant' : 0,
+                    #techs
+                    'bloodlines'        :1,
+                    'husbandry'         :1,
+                
+                    #workshop
+                   'ram' : 'full',
+                   'mangonel' : 2,
+                   'scorpion' : 'full',
+                   'bombard cannon' : 0,
+                    
+                    
+                    #blacksmith
+                    'archer armor 1'    :1,
+                    'archer armor 2'    :1,
+                    'archer armor 3'    :1,
+                    'fletching'         :1,
+                    'bodkin arrow'      :1,
+                    'bracer'            :1,
+                    'melee attack 1'    :1,
+                    'melee attack 2'    :1,
+                    'melee attack 3'    :1,
+                    'cavalry armor 1'   :1,
+                    'cavalry armor 2'   :1,
+                    'cavalry armor 3'   :1,
+                    'infantry armor 1'  :1,
+                    'infantry armor 2'  :0,
+                    'infantry armor 3'  :0,
+                'full blacksmith'       :0,
+
+                    #dock
+                    'galley' : 'full',
+                    'fire ship' : 'full',
+                    'demo ship' : 2,
+                    'cannon galleon' : 'full',
+                    #techs
+                    'careening'         :1,
+                    'dry dock'          :1,
+                    'shipwright'        :0,
+
+                    #university
+                    'masonry'           :1,
+                    'architecture'      :0,
+                    'stone wall'        :1,
+                    'fortified wall'    :1,
+                    'guard tower'       :1,
+                    'keep'              :0,
+                    'bombard tower'     :1,
+                    'siege engineers'   :1,     
+                    'heated shot'       :1,
+                    'treadmill crane'   :1,
+                    'arrowslits'        :0,
+                    
+                    #monastery
+                    'redemption'        :0,
+                    'atonement'         :1,
+                    'herbal medicine'   :1,
+                    'heresy'            :0,
+                    'sanctity'          :0,
+                    'fervor'            :1,
+                    'faith'             :0,
+                    'illumination'      :1,
+                    'block printing'    :1,
+                    'theocracy'         :0,
+                    #eco techs
+                    'gold 2'            :1,
+                    'stone 2'           :0,
+                    'two man saw'       :0,
+                    'guilds'            :1,
+                    'crop rotation'     :1,
+                    'techslist': None
+
+                },
+        
         'teutons':
                 {
                     
@@ -3265,6 +3650,12 @@ def civ_bonuses():
                     ['siege', 'trebuchet', 'tech', 'imperial'], #warwolf
                     ['team', 'archer', 'medium']], #faster ranges
         
+        'bulgarians' : [['economy', 'stone', 'weak'], #cheaper TCs
+                        ['siege', 'military', 'strong', 'discount'],#cheaper siege
+                        ['infantry', 'military', 'strong'],#free militia upgrades
+                        ['cavalry', 'military', 'strong', 'tech'],#stirrups
+                        ['infantry', 'military', 'strong', 'tech']],#bagains
+        
         'burmese': [['economy', 'mid', 'medium', 'wood'], #free wood upgrades
                     ['military', 'infantry', 'strong'], #+1 inf atk
                     ['elephant', 'castle', 'tech'], #howdah
@@ -3281,6 +3672,11 @@ def civ_bonuses():
 
         'chinese' : [['economy', 'early', 'strong'],        #additional vils
                     ['economy', 'mid', 'late', 'strong']],  #cheaper techs
+        
+        'cumans' : [['economy', 'early', 'medium'],#2nd TC
+                    ['military', 'cavalry', 'medium'],#faster
+                    ['military', 'cavalry', 'strong', 'tech']],#steppe husbandry
+                    #no idea how to cover the feudal siege option or cuman mercs
 
         'ethiopians' : [['military', 'archer', 'medium'],   #faster firing archers
                         ['economy', 'medium', 'mid'], #freeee money
@@ -3323,6 +3719,12 @@ def civ_bonuses():
                      ['siege', 'onager', 'tech', 'imperial'], #shinchokon
                      ['defensive', 'tower', 'medium']], #various tower bonuses
         
+        'lithuanians' : [['military', 'trash units', 'medium'],#faster
+                         ['economy', 'early', 'strong'],#extra food
+                         ['military', 'cavalry', 'strong'],#relics
+                         ['defensive', 'tech', 'medium'],#hill forts
+                         ['trash units', 'tech', 'weak']],#tower shields
+        
         'magyars' : [['military', 'medium', 'infantry', 'cavalry'], #free atk
                      ['military', 'cavalry', 'medium', 'discount', 'early'], #cheaper scouts
                      ['economy', 'weak', 'early']], #1hitko wolves
@@ -3341,15 +3743,12 @@ def civ_bonuses():
         
         'mongols' : [['economy', 'early', 'strong', 'food'], #hunters
                      ['military', 'cavalry', 'medium'], #hussar HP
-                     ['military', 'cavalry archer', 'weak'], #faster firing CA
+                     ['military', 'cavalry archer', 'strong'], #faster firing CA
                      ['siege', 'tech', 'imperial'], #drill
                      ['team', 'early', 'strong']], #team scout LOS 
-                       #so weird quantifying bc their CA don't have ring armor
-                        #so they're not useful... but in a vacuum the 
-                        #bonus is ok?
         
         'persians' : [['economy', 'early', 'medium'], #free res
-                        ['economy', 'early', 'mid', 'late', 'strong']], #faster TC/dock
+                        ['economy', 'mid', 'late', 'strong']], #faster TC/dock
         
         'portuguese' : [['military', 'discount', 'gold', 'medium'], #less gold
                         ['navy', 'medium']], #ships +10HP
@@ -3365,6 +3764,13 @@ def civ_bonuses():
         'spanish' : [['team', 'discount', 'strong', 'late', 'gold'], #blacksmith; this also encapsulates their strong team bonus ig
                      ['military', 'gunpowder', 'strong', 'late']], #CG and faster firing
         
+         'tatars' : [['economy', 'early', 'strong', 'food'],#longer sheep
+                     ['economy', 'mid', 'strong', 'food'],#sheep from new tcs
+                     ['military', 'medium'],#elevations
+                     ['military', 'archer', 'cavalry archer', 'strong'],#free thumb and PT
+                     ['military', 'cavalry', 'cavalry archer', 'strong', 'tech'],#silk armor
+                     ['military', 'weak', 'siege']],#timurid siegecraft
+                    
         'teutons' : [['economy', 'wood', 'strong', 'mid', 'late'], #farms
                      ['defensive', 'tower', 'medium']], #various tower bonuses
         
@@ -3383,7 +3789,7 @@ def civ_bonuses():
                      ['military', 'medium', 'infantry'], 
                      ['economy', 'strong', 'mid']]
                        
-        }
+            }
     return bonuses
 
 
