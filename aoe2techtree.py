@@ -3726,8 +3726,8 @@ def civ_bonuses():
                          ['trash units', 'tech', 'weak']],#tower shields
         
         'magyars' : [['military', 'medium', 'infantry', 'cavalry'], #free atk
-                     ['military', 'cavalry', 'medium', 'discount', 'early'], #cheaper scouts
-                     ['economy', 'weak', 'early']], #1hitko wolves
+                     ['military', 'cavalry', 'medium', 'discount', 'early']], #cheaper scouts
+                    # ['economy', 'weak', 'early']], #1hitko wolves #not a real eco bonus
         
         'malay' : [['economy', 'medium', 'early', 'mid'], #faster up
                    ['fishing', 'strong'], #fish traps
@@ -3761,7 +3761,8 @@ def civ_bonuses():
         'slavs' : [['economy', 'mid', 'late', 'strong', 'food'], #farming
                    ['military', 'discount', 'mid', 'late', 'siege', 'medium']], #siege discount
         
-        'spanish' : [['team', 'discount', 'strong', 'late', 'gold'], #blacksmith; this also encapsulates their strong team bonus ig
+        'spanish' : [['discount', 'strong', 'late', 'gold'], #blacksmith
+                     ['team', 'gold', 'strong'],#trade bonus
                      ['military', 'gunpowder', 'strong', 'late']], #CG and faster firing
         
          'tatars' : [['economy', 'early', 'strong', 'food'],#longer sheep
@@ -3776,7 +3777,7 @@ def civ_bonuses():
         
         'turks' : [['economy', 'early', 'mid', 'late', 'medium', 'gold'], #gold
                       ['military', 'gunpowder', 'strong', 'discount'], #gunpowder bonus pile
-                      ['cavalry archer', 'castle', 'tech'],
+                      ['cavalry archer', 'castle', 'tech'],#sipahi
                       ['siege', 'tower', 'imperial', 'tech'], #artillery
                    ['military', 'cavalry', 'medium']], #free hussar/lc
         
