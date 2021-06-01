@@ -3653,8 +3653,8 @@ def civ_bonuses():
         'bulgarians' : [['economy', 'stone', 'weak'], #cheaper TCs
                         ['siege', 'military', 'strong', 'discount'],#cheaper siege
                         ['infantry', 'military', 'strong'],#free militia upgrades
-                        ['cavalry', 'military', 'strong', 'tech'],#stirrups
-                        ['infantry', 'military', 'strong', 'tech']],#bagains
+                        ['cavalry', 'military', 'strong', 'tech', 'castle'],#stirrups
+                        ['infantry', 'military', 'strong', 'tech', 'imperial']],#bagains
         
         'burmese': [['economy', 'mid', 'medium', 'wood'], #free wood upgrades
                     ['military', 'infantry', 'strong'], #+1 inf atk
@@ -3687,7 +3687,7 @@ def civ_bonuses():
                     ['economy', 'early', 'strong', 'food']],#berries
         
         'goths' : [['military', 'strong', 'discount', 'infantry'], #cheap inf
-                   ['economy', 'early', 'weak', 'food']], #hunters better
+                   ['economy', 'early', 'strong', 'food']], #hunters better, also instant loom = extra vil
         
         'huns' : [['economy', 'early', 'mid', 'medium', 'wood'], #no houses
                     ['military', 'discount', 'medium', 'cavalry archer']], #disc CA
@@ -3705,12 +3705,13 @@ def civ_bonuses():
         
         'japanese' : [['economy', 'early', 'wood', 'medium'], #cheaper camps
                       ['fishing', 'strong'], #fishing ships better
-                      ['siege', 'trebuchet', 'tech', 'imperial'],
+                      ['siege', 'trebuchet', 'tech', 'imperial'],#kataparuto
+                      ['tower', 'tech', 'castle'],
                       ['military', 'infantry', 'strong']], #infantry attack
         
-        #NOTE: Khmer farmers NOT buffed until DE so their bonuses are trash here
         'khmer' : [['economy', 'medium', 'wood', 'early'], #don't need buildings
                    ['military', 'elephant', 'weak'], #faster elefantos
+                   ['economy', 'strong', 'food', 'farm', 'mid', 'late'],
                    ['military', 'siege', 'weak', 'team']], #scorpion range
         
         'koreans' : [['economy', 'weak', 'early'], #villager LOS
@@ -3748,7 +3749,8 @@ def civ_bonuses():
                      ['team', 'early', 'strong']], #team scout LOS 
         
         'persians' : [['economy', 'early', 'medium'], #free res
-                        ['economy', 'mid', 'late', 'strong']], #faster TC/dock
+                        ['economy', 'mid', 'late', 'strong'], #faster TC/dock
+                        ['military', 'team', 'cavalry']],#bonus against archers
         
         'portuguese' : [['military', 'discount', 'gold', 'medium'], #less gold
                         ['navy', 'medium']], #ships +10HP

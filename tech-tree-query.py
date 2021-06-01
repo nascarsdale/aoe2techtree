@@ -16,7 +16,7 @@ for build in all_units.keys():
         for unit in all_units[build][unitline]:
             alltechs.append(unit)
 
-print('This script will ask you for units & techs that you would like a civ to have. You can enter as many as you like. Please refer to the readme for information about how the techs are described. They do not all match the tech tree exactly (e.g. instead of \"ring archer armor\", the entry in this script is \"archer armor 3\", but \"bracer\" is unchanged)')
+print('This script will ask you for units & techs that you would like a civ to have. You can enter as many as you like. Please refer to the readme for information about how the techs are described. They do not all match the tech tree exactly (e.g. instead of \"ring archer armor\", the entry in this script is \"archer armor 3\", but \"bracer\" is unchanged). NOTE: currently, you must enter desired bonuses LAST in your query.')
 
 run = True
 
