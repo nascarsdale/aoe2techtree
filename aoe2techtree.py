@@ -3663,7 +3663,7 @@ def civ_bonuses():
                     ['monk', 'discount', 'strong']], #50% cheaper monk techs
      
         'byzantines' : [['defensive'], #building hp
-                        ['military', 'discount', 'trash units', 'strong'], #cheap trash
+                        ['military', 'discount', 'trash', 'strong'], #cheap trash
                         ['economy', 'late', 'medium']], #cheaper imp
 
         'celts' : [['economy', 'early', 'mid', 'late', 'strong', 'wood'], #wood bonus
@@ -3686,11 +3686,11 @@ def civ_bonuses():
                     ['economy', 'mid', 'medium'], #free farm
                     ['economy', 'early', 'strong', 'food']],#berries
         
-        'goths' : [['military', 'strong', 'discount', 'infantry'], #cheap inf
+        'goths' : [['military', 'strong', 'discount', 'infantry', 'trash'], #cheap inf
                    ['economy', 'early', 'strong', 'food']], #hunters better, also instant loom = extra vil
         
         'huns' : [['economy', 'early', 'mid', 'medium', 'wood'], #no houses
-                    ['military', 'discount', 'medium', 'cavalry archer']], #disc CA
+                    ['military', 'discount', 'medium', 'cavarcher']], #disc CA
         
         'incas' : [['economy', 'early', 'food', 'weak'], #free llama
                    ['economy', 'early', 'wood', 'medium'], #houses support 10
@@ -3720,14 +3720,15 @@ def civ_bonuses():
                      ['siege', 'onager', 'tech', 'imperial'], #shinchokon
                      ['defensive', 'tower', 'medium']], #various tower bonuses
         
-        'lithuanians' : [['military', 'trash units', 'medium'],#faster
+        'lithuanians' : [['military', 'trash', 'medium'],#faster
                          ['economy', 'early', 'strong'],#extra food
                          ['military', 'cavalry', 'strong'],#relics
                          ['defensive', 'tech', 'medium'],#hill forts
                          ['trash units', 'tech', 'weak']],#tower shields
         
         'magyars' : [['military', 'medium', 'infantry', 'cavalry'], #free atk
-                     ['military', 'cavalry', 'medium', 'discount', 'early']], #cheaper scouts
+                     ['military', 'cavalry', 'medium', 'discount', 'early'], #cheaper scouts
+                     ['military', 'cavarcher', 'tech', 'strong', 'imperial']],#recruve bow
                     # ['economy', 'weak', 'early']], #1hitko wolves #not a real eco bonus
         
         'malay' : [['economy', 'medium', 'early', 'mid'], #faster up
@@ -3744,7 +3745,7 @@ def civ_bonuses():
         
         'mongols' : [['economy', 'early', 'strong', 'food'], #hunters
                      ['military', 'cavalry', 'medium'], #hussar HP
-                     ['military', 'cavalry archer', 'strong'], #faster firing CA
+                     ['military', 'cavarcher', 'strong'], #faster firing CA
                      ['siege', 'tech', 'imperial'], #drill
                      ['team', 'early', 'strong']], #team scout LOS 
         
@@ -3770,8 +3771,8 @@ def civ_bonuses():
          'tatars' : [['economy', 'early', 'strong', 'food'],#longer sheep
                      ['economy', 'mid', 'strong', 'food'],#sheep from new tcs
                      ['military', 'medium'],#elevations
-                     ['military', 'archer', 'cavalry archer', 'strong'],#free thumb and PT
-                     ['military', 'cavalry', 'cavalry archer', 'strong', 'tech'],#silk armor
+                     ['military', 'archer', 'cavarcher', 'strong'],#free thumb and PT
+                     ['military', 'cavalry', 'cavarcher', 'strong', 'tech'],#silk armor
                      ['military', 'weak', 'siege']],#timurid siegecraft
                     
         'teutons' : [['economy', 'wood', 'strong', 'mid', 'late'], #farms
@@ -3779,14 +3780,14 @@ def civ_bonuses():
         
         'turks' : [['economy', 'early', 'mid', 'late', 'medium', 'gold'], #gold
                       ['military', 'gunpowder', 'strong', 'discount'], #gunpowder bonus pile
-                      ['cavalry archer', 'castle', 'tech'],#sipahi
+                      ['cavarcher', 'castle', 'tech'],#sipahi
                       ['siege', 'tower', 'imperial', 'tech'], #artillery
                    ['military', 'cavalry', 'medium']], #free hussar/lc
         
         'vietnamese' : [['military', 'early', 'medium'], #positions
                         ['economy', 'mid', 'late', 'wood', 'medium'],#no-wood techs
                         #note they have NOT received their eco bonus in HD :(
-                        ['military', 'archer', 'weak']], #higher archer HP
+                        ['military', 'cavarcher', 'archer', 'weak']], #higher archer HP
         
         'vikings' : [['navy', 'discount', 'strong', 'early', 'late', 'mid'], 
                      ['military', 'medium', 'infantry'], 
